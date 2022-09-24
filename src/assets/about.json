@@ -1,0 +1,14 @@
+{
+    "tooltiptext": "總有一天會放上我的照片",
+    "text": {
+        "h3": "學習網頁開發,對於前端技術抱持熱忱!",
+        "textinline": [
+            {
+                "p": "透過Vue.js 2 以及 PHP 開發網頁過,並利用非同步請求處理資料."
+            },
+            {
+                "p": "Vue.js | JavaScript | CSS | HTML | PHP"
+            }
+        ]
+    }
+}
