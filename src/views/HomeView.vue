@@ -4,7 +4,7 @@ import { GithubFilled } from '@ant-design/icons-vue';
 
 <template>
   <div class="container">
-    <div class="rightspace"></div>
+    <div class="lefspace"></div>
     <div class="introduce">
       <h1>
         Hello, there! I'm Monty Huang.
@@ -31,17 +31,21 @@ import { GithubFilled } from '@ant-design/icons-vue';
 
 <style lang="scss" scoped>
 .container {
+  display: flex;
   width: 100%;
   height: 100vh;
   background: linear-gradient(250deg, white 50%, transparent 0%) center center / 100% 100%,
     url("../assets/coding.jpg") left center / auto 100%;
 }
-
+.lefspace{
+  display: flex;
+  flex:1.2;
+}
 .introduce {
-  width: auto;
-  margin: 0px 0px 0px 850px;
+  // margin: 0px 0px 0px 850px;
   height: 100%;
   display: flex;
+  flex:1;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;

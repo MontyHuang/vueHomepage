@@ -12,11 +12,19 @@ const projecttData = data;
                 {{item.text}}
             </h3>
             <div v-if='item.title === "img"' class="imgcontainer">
-                <img :src='item.url' width="800" height="450">
+                <img :src='item.url' height="450">
             </div>
+            <h5 v-if='item.title === "h5"'>
+                {{item.text}}
+            </h5>
             <p v-if='item.title === "p"'>
                 {{item.text}}
             </p>
+            <div v-if='item.title === "a"'>
+                <a :href='item.url' target="_blank">
+                    GitHub連結
+                </a>
+            </div>
         </div>
     </div>
 
@@ -36,9 +44,14 @@ const projecttData = data;
         font-size: 60px;
     }
 
+    h5 {
+        margin: 10px 0px;
+        font-size: 45px;
+    }
+
     p {
-        font-size: 30px;
-        font-weight: bold;
+        margin: 10px 0px 20px 0px;
+        font-size: 20px;
     }
 
     .imgcontainer {

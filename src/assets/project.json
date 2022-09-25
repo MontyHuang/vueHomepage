@@ -1,19 +1,97 @@
 {
-    "content":[
+    "content": [
         {
-            "title":"h3",
-            "text":"ct_draw"
+            "title": "h3",
+            "text": "ct_draw"
         },
         {
-            "title":"img",
-            "url":"../src/assets/ct_draw1.png"
+            "title": "img",
+            "url": "./img/ct_draw1.png"
         },
         {
-            "title":"p",
-            "text":""
-        },{
-            "title":"h3",
-            "text":"homepage"
+            "title": "h5",
+            "text": "介紹"
+        },
+        {
+            "title": "p",
+            "text": "這是一個結合Blockly與SVG的繪圖網站,主要原因是配合運算思維課程,所開發的測驗網站"
+        },
+        {
+            "title": "img",
+            "url": "./img/ct_draw2.png"
+        },
+        {
+            "title": "h5",
+            "text": "繪圖區塊"
+        },
+        {
+            "title": "p",
+            "text": "左邊為繪圖紙,右邊為Blockly,使用者可以透過拖曳右邊Blockly的積木,像是組合程式語言一般,來繪畫。Blockly為Google所開發的套件,可以透過Blockly Factory去客製化我們想要的Block,也就是所謂的積木,不過執行這些Block的功能,是必須透過開發人員定義Function才能動作,我藉由自定義Funciton功能,讓使用者可以在左邊繪圖紙上畫上圖案,藉由SVG語法我可以輕鬆將圖案放上去."
+        },
+        {
+            "title": "h5",
+            "text": "圖案"
+        },
+        {
+            "title": "p",
+            "text": "有些繪圖軟體在圖案繪畫後,在不能再控制它了,所以我透過OOP方式,將所有圖案都視為一種物件,並紀錄的陣列當中,當使用者想要位移或翻轉圖案時,就可以呼叫陣列中的物件,新增相關參數,就可以重新繪製."
+        },
+        {
+            "title": "h5",
+            "text": "開發過程"
+        },
+        {
+            "title": "p",
+            "text": "此專案一開始是透過純HTML+CSS+JavaScript以及套件,之後將專案搬進Vue.js 2進行除了繪圖區塊以外地方開發,整體除了使用Vue還有Vuetify、PHP後端以及Mysql."
+        },
+        {
+            "title": "p",
+            "text": "專案有使用非同步請求來處理先後順序,考試時間、答題狀態、題目JSON以及Blockly套件資料,這樣能確保使用者在查看網頁時能有最好的體驗."
+        },
+        {
+            "title":"a",
+            "url":"https://github.com/MontyHuang/ct_draw_local"
+        },
+        {
+            "title": "h3",
+            "text": "homepage"
+        },
+        {
+            "title": "img",
+            "url": "./img/homepage.png"
+        },
+        {
+            "title": "p",
+            "text": "透過Vue3 + Vite + Vue-Router所建立的個人網站"
+        },
+        {
+            "title":"a",
+            "url":"https://github.com/MontyHuang/vueHomepage"
+        },
+        {
+            "title": "h3",
+            "text": "poker"
+        },
+        {
+            "title": "p",
+            "text": "透過Python簡單的撲克牌程式,會自動辨別使用者手中的牌組有順子、同花順等等"
+        },
+        {
+            "title":"a",
+            "url":"https://github.com/MontyHuang/poker"
+        },
+        {
+            "title": "h3",
+            "text": "WeatherCatch-webcrawler"
+        },
+        {
+            "title": "p",
+            "text": "爬蟲程式,可以爬明天天氣"
+        },
+        {
+            "title":"a",
+            "url":"https://github.com/MontyHuang/WeatherCatch-webcrawler"
         }
+
     ]
 }

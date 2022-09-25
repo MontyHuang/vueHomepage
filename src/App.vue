@@ -1,18 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import { ref } from 'vue'
-import { computed } from "@vue/reactivity";
+import { ref ,reactive} from 'vue'
 import { CodeFilled } from '@ant-design/icons-vue';
 
 
-//state
-const navbar = [{title:"Home",path:"./"},{title:"About",path:"./about"},{title:"Project",path:"./project"}]
+//變數
 const name = ref("Monty Huang");
+const navbar = reactive([{title:"Home",path:"./"},{title:"About",path:"./about"},{title:"Project",path:"./project"}])
 
-// Computed props
-const nameFornav = computed(()=>{
-  return name.value;
-})
 
 </script>
 
@@ -20,7 +15,7 @@ const nameFornav = computed(()=>{
 
   <header class="navbar">
     <code-filled style="color:#213547;font-size: 30px;padding-right: 10px;" />
-    <span class="title">{{nameFornav}}</span>
+    <span class="title">{{name}}</span>
     <div class="navbar-right">
       <li v-for="item in navbar">
         <RouterLink :to={path:item.path}>{{item.title}}</RouterLink>
@@ -88,5 +83,9 @@ a:hover {
 a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+li {
+    list-style-type: none;
 }
 </style>
